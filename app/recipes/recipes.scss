@@ -1,0 +1,39 @@
+.placeholder {
+  height: 470px;
+  background-color: #eee;
+  border-radius: 0.375rem !important;
+  overflow: hidden;
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -800px 0;
+  }
+  100% {
+    background-position: 800px 0;
+  }
+}
+
+.animated-background {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: darkgray;
+  background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+  background-size: 1000px 500px;
+  height: 470px;
+  position: relative;
+}
+
+.recipe-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  pre {
+    color: #fff;
+    font-size: 1.2em;
+    width: 80%;
+  }
+}
